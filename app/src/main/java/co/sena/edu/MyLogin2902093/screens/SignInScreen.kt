@@ -16,7 +16,7 @@ import co.sena.edu.MyLogin2902093.components.HeadingTextComponent
 import co.sena.edu.MyLogin2902093.components.NormalTextComponent
 
 @Composable
-fun SignUpScreen() {
+fun SignInScreen() {
 
     Surface(
         color = Color.White,
@@ -27,7 +27,7 @@ fun SignUpScreen() {
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
             NormalTextComponent(value = stringResource(id = R.string.hello))
-            HeadingTextComponent(value = stringResource(id = R.string.create_account))
+            HeadingTextComponent(value = stringResource(id = R.string.welcome))
         }
     }
 
@@ -36,5 +36,5 @@ fun SignUpScreen() {
 @Preview
 @Composable
 fun DefaultPreviewOfSignUpScreen() {
-    SignUpScreen()
+    SignInScreen()
 }
